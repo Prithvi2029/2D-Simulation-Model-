@@ -1,0 +1,91 @@
+//Data Input//
+>>>Simulating Inclined Reservoir 3D
+...............................
+>>>Dimensions
+Dimension	2
+Phases      2
+Depth       gener
+<<<
+...............................
+>>>Rock Properties
+Rock_Compr	0.000003
+Ref_Poro    0.2
+>>>Media Properties
+RelPermEq       1
+Initial_P	    3000
+Oil_Saturation  0.75
+<<<
+...............................
+>>>Fluid Properties
+Oil
+Reference_P		2800
+Oil_Ref_Visc	1
+Oil_Visc_Coeff  -0.00006 1.1715    
+Oil_Compr	0.00001 
+Oil_FVF		1.3
+Oil_FVF_Coeff  -0.00001 1.018
+Oil_Density	45
+<<<
+Water
+Reference_P		2800
+H2O_Ref_Visc	1
+H2O_Compr	0.000003 
+H2O_FVF		1.0
+H2O_Density	62.4
+<<<
+...............................
+>>>Well Properties
+WellName	www2
+rwell		0.35
+Prodtype	Rate
+Welltype    Inj
+BHP         1600
+Rate		300
+LocationI	1
+LocationJ   1
+KIndex      1
+skin        0
+<<<
+WellName	www1
+rwell		0.35
+Prodtype	Pressure
+Welltype    Prd
+BHP         2900
+Rate		200
+LocationI	15
+LocationJ   15
+KIndex      1
+skin        0
+<<<
+>>>
+...............................
+>>>Grid Size
+dx		30
+dy		30
+dz		30
+<<<
+...............................
+>>>Boundary Conditions
+PB 0 0 0 0 0 0
+PBP 0 0 0 0 0 0
+<<<
+...............................
+>>>Numerical Setting
+tstep_int 	1
+t_final		365
+tol         0.0001
+PerturbJ    0.0001
+MaxIter		5
+DtIncrementCrit  2
+solver		lag
+<<<
+...............................
+>>>Output Type
+PrintOutputs   100
+PrintIteration 12
+PrintTimes    30 60 90 120 150 180 210 240 270 300 330 360
+<<<
+END
+
+   
+
